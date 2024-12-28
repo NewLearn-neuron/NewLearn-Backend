@@ -1,4 +1,4 @@
-package com.newlearn.newlearn.global.config;
+package com.newlearn.newlearn.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.newlearn.newlearn.global.exception;
+package com.newlearn.newlearn.common.exception;
 
 import org.springframework.http.HttpStatus;
 

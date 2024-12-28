@@ -1,10 +1,10 @@
-package com.newlearn.newlearn.global.exception;
+package com.newlearn.newlearn.common.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.newlearn.newlearn.global.response.BaseApiResponse;
+import com.newlearn.newlearn.common.response.BaseApiResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

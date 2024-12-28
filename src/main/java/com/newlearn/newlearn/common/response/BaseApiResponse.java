@@ -1,9 +1,9 @@
-package com.newlearn.newlearn.global.response;
+package com.newlearn.newlearn.common.response;
 
 import org.springframework.http.ResponseEntity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.newlearn.newlearn.global.exception.BaseCode;
+import com.newlearn.newlearn.common.exception.BaseCode;
 
 import lombok.Builder;
 import lombok.Getter;
