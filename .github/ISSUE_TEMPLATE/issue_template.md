@@ -1,6 +1,6 @@
 ---
 name: issue_template
-about: issue tempalte
+about: 이슈 템플릿
 title: "[BE/FE] 이슈명"
 labels: ''
 assignees: ''
