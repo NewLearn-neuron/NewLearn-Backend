@@ -1,6 +1,10 @@
-package com.newlearn.newlearn.scraped_news.entity;
+package com.newlearn.newlearn.article_history.entity;
 
-import com.newlearn.newlearn.news.entity.News;
+import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.CreatedDate;
+
+import com.newlearn.newlearn.article.entity.Article;
 import com.newlearn.newlearn.user.entity.User;
 
 import jakarta.persistence.Column;
@@ -18,15 +22,17 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class ScrapedNews {
+public class ArticleHistory {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "scraped_agency_id")
+	@Column(name = "article_history_id")
 	private Long id;
+	@CreatedDate
+	private LocalDateTime createdAt;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
 	private User user;
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "news_id")
-	private News news;
+	@JoinColumn(name = "article_id")
+	private Article article;
 }

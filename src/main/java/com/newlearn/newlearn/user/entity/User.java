@@ -8,8 +8,8 @@ import org.hibernate.annotations.DynamicInsert;
 
 import com.newlearn.newlearn.common.BaseTimeEntity;
 import com.newlearn.newlearn.like_category.entity.LikeCategory;
-import com.newlearn.newlearn.news_history.entity.NewsHistory;
-import com.newlearn.newlearn.scraped_news.entity.ScrapedNews;
+import com.newlearn.newlearn.article_history.entity.ArticleHistory;
+import com.newlearn.newlearn.scraped_article.entity.ScrapedArticle;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -44,7 +44,7 @@ public class User extends BaseTimeEntity {
 	@OneToMany(mappedBy = "user")
 	private List<LikeCategory> likeCategories = new ArrayList<>();
 	@OneToMany(mappedBy = "user")
-	private List<ScrapedNews> scrapedNews = new ArrayList<>();
+	private List<ScrapedArticle> scrapedArticles = new ArrayList<>();
 	@OneToMany(mappedBy = "user")
-	private List<NewsHistory> newsHistories = new ArrayList<>();
+	private List<ArticleHistory> articleHistories = new ArrayList<>();
 }

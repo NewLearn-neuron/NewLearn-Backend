@@ -3,7 +3,7 @@ package com.newlearn.newlearn.image.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.newlearn.newlearn.news_image.entity.NewsImage;
+import com.newlearn.newlearn.article_image.entity.ArticleImage;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -27,5 +27,5 @@ public class Image {
 	private String url;
 	private boolean isThumbnail;
 	@OneToMany(mappedBy = "image")
-	private List<NewsImage> newsImages = new ArrayList<>();
+	private List<ArticleImage> articleImages = new ArrayList<>();
 }
