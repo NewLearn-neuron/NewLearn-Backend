@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class RedisArticle implements Serializable {
-	private Long articleId;
+	private Long redisArticleId;
 	private String title;
 	private String source;
 	private String publishedDate;
