@@ -1,4 +1,4 @@
-package com.newlearn.newlearn.news.entity;
+package com.newlearn.newlearn.article.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +16,13 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class NewsAgency {
+public class ArticleAgency {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "news_agency_id")
+	@Column(name = "article_agency_id")
 	private Long id;
 	@Column(length = 30)
 	private String name;
-	@OneToMany(mappedBy = "newsAgency")
-	private List<News> news = new ArrayList<>();
+	@OneToMany(mappedBy = "articleAgency")
+	private List<Article> news = new ArrayList<>();
 }
